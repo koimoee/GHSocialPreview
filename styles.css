@@ -7,7 +7,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'JetBrains Mono', monospace;
-    padding: 20px;
+    padding: 10px;
     scrollbar-color: transparent;
 }
 
@@ -38,7 +38,6 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
 }
 
 .input {
