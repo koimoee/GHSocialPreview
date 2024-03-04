@@ -1,38 +1,55 @@
 html, body {
     margin: 0;
     padding: 0;
+    scrollbar-color: transparent;
 }
 
 body {
-    background-image: linear-gradient(0deg, #00ffaf 0%, #00d4ff 100%);;
+    background-image: url('/image/bg.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'JetBrains Mono', monospace;
+    padding: 40px;
+    scrollbar-color: transparent;
 }
+
+video#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: 100vh;
+  }
+  
+  @supports (-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px)) {
+    .glassmorphism {
+      backdrop-filter: blur(5px);
+      -webkit-backdrop-filter: blur(5px);
+    }
+  }
 
 h1 {
     font-weight: bold;
 }
 
-.wrapper {
-    position: relative;
-    z-index: 99;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .box {
     padding: 1.5rem 0;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border: 1px solid #00ffaf;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20px;
 }
 
 .input {
@@ -45,16 +62,19 @@ h1 {
 label {
     margin-top: 10px;
     font-weight: bold;
+    color: #ffffff;
 }
 
 .header {
     margin: 30px 0;
+    color: #211f1f;
 }
 
 .url {
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: #ffffff;
 }
 
 .btn {
@@ -62,121 +82,39 @@ label {
     transition: 200ms;
 }
 
+.material-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.40rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #6bb1e7;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+  }
+  
+  .material-button:hover {
+    background-color: #5993c0;
+  }
+  
+  .material-button:active {
+    background-color: #6bb1e7;
+  }
+
 .btn:hover {
     transform: scale(1.05);
 }
 
-.image-preview {
-    margin: 10px 30px;
-    height: 340px;
-    width: 660px;
-    border: 1px solid #E5E4E2	;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 #download:disabled {
-    background-color: #84a7ff;
-    border-color: #84a7ff;
-}
-
-.circles{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.circles li{
-    position: absolute;
-    display: block;
-    list-style: none;
-    width: 20px;
-    height: 20px;
-    background: rgba(255, 255, 255, 0.6);
-    animation: animate 25s linear infinite;
-    bottom: -150px;
-    
-}
-
-.circles li:nth-child(1){
-    left: 25%;
-    width: 80px;
-    height: 80px;
-    animation-delay: 0s;
-}
-
-
-.circles li:nth-child(2){
-    left: 10%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 2s;
-    animation-duration: 12s;
-}
-
-.circles li:nth-child(3){
-    left: 70%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 4s;
-}
-
-.circles li:nth-child(4){
-    left: 40%;
-    width: 60px;
-    height: 60px;
-    animation-delay: 0s;
-    animation-duration: 18s;
-}
-
-.circles li:nth-child(5){
-    left: 65%;
-    width: 20px;
-    height: 20px;
-    animation-delay: 0s;
-}
-
-.circles li:nth-child(6){
-    left: 75%;
-    width: 110px;
-    height: 110px;
-    animation-delay: 3s;
-}
-
-.circles li:nth-child(7){
-    left: 35%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 7s;
-}
-
-.circles li:nth-child(8){
-    left: 50%;
-    width: 25px;
-    height: 25px;
-    animation-delay: 15s;
-    animation-duration: 45s;
-}
-
-.circles li:nth-child(9){
-    left: 20%;
-    width: 15px;
-    height: 15px;
-    animation-delay: 2s;
-    animation-duration: 35s;
-}
-
-.circles li:nth-child(10){
-    left: 85%;
-    width: 150px;
-    height: 150px;
-    animation-delay: 0s;
-    animation-duration: 11s;
+    background-color: #5993c0;
+    border-color: #5993c0;
 }
 
 
@@ -198,11 +136,10 @@ label {
 #img {
     height: 320px;
     width: 640px;
-    border: 1px solid #e5e4e2;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e5e4e2;
+    background-color: transparent;
     font-family: 'Fira Code', monospace;
 }
 
@@ -467,6 +404,27 @@ label {
     color: #59c8c5;
 }
 
+/* Nord Theme */
+
+.nord {
+    border: 1px solid #2e3440;
+    background-color: #2e3440;
+    color: #d8dee9;
+}
+
+.nord-username {
+    color: #88c0d0;
+    font-weight: bold;
+}
+
+.nord-reponame {
+    color: #a3be8c;
+}
+
+.nord-description {
+    color: #b48ead;
+}
+
 /* winter-is-coming theme */
 
 .winter-is-coming {
@@ -486,4 +444,88 @@ label {
 
 .winter-is-coming-description {
     color: #aa7ccf;
+}
+
+/* solarized dark */
+
+.solarized-dark {
+    border: 1px solid #073642;
+    background-color: #002b36;
+    color: #839496;
+}
+
+.solarized-dark-username {
+    color: #66d9ef;
+    font-weight: bold;
+}
+
+.solarized-dark-reponame {
+    color: #fdf4c4;
+}
+
+.solarized-dark-description {
+    color: #93e1f5;
+}
+
+/* solarized light */
+
+.solarized-light {
+    border: 1px solid #b58900;
+    background-color: #fdf6e3;
+    color: #657b83;
+}
+
+.solarized-light-username {
+    color: #2aa198;
+    font-weight: bold;
+}
+
+.solarized-light-reponame {
+    color: #cb4b16;
+}
+
+.solarized-light-description {
+    color: #268bd2;
+}
+
+/* Dark Purple */
+
+.dark-purple {
+    border: 1px solid #332533;
+    background-color: #332533;
+    color: #ddd6e3;
+}
+
+.dark-purple-username {
+    color: #e0d5ff;
+    font-weight: bold;
+}
+
+.dark-purple-reponame {
+    color: #ffb3e6;
+}
+
+.dark-purple-description {
+    color: #a6bfff;
+}
+
+/* Retro-80s */
+
+.retro-80s {
+    border: 1px solid #555;
+    background-color: #f0c84a;
+    color: #333;
+}
+
+.retro-80s-username {
+    color: #ff0080;
+    font-weight: bold;
+}
+
+.retro-80s-reponame {
+    color: #00ffff;
+}
+
+.retro-80s-description {
+    color: #008000;
 }

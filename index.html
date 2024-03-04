@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Github Preview Generator</title>
+        <title>Github Social Generator</title>
 
         <!-- Jetbrains Mono -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -76,25 +76,12 @@
         <script src="index.js"></script>
     </head>
     <body>
-        <div class="area">
-            <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-
-        <div class="wrapper">
-            <div class="box">
+        <video id="background-video" oncontextmenu="return false;" loop muted autoplay>
+            <source src="/image/background.mp4" type="video/mp4">
+        </video>
+            <div class="box glassmorphism">
                 <div class="header animate__animated animate__fadeInDown">
-                    <h1>Social Preview Generator</h1>
+                    <h1>Github Social Generator</h1>
                 </div>
                 <div class="input">
                     <label
@@ -131,13 +118,16 @@
                         <option value="github-light">Github Light</option>
                         <option value="night-owl-dark">Night Owl Dark</option>
                         <option value="night-owl-light">Night Owl light</option>
-                        <option value="winter-is-coming">
-                            Winter Is Coming
-                        </option>
+                        <option value="nord">Nord Theme</option>
+                        <option value="winter-is-coming">Winter Is Coming</option>
+                        <option value="solarized-dark">Solarized Dark</option>
+                        <option value="solarized-light">Solarized Light</option>
+                        <option value="darl-purple">Dark Purple</option>
+                        <option value="retro-80s">Retro 80s</option>
                     </select>
                     <button
                         type="button"
-                        class="btn btn-dark animate__animated animate__fadeIn"
+                        class="material-button btn-dark animate__animated animate__fadeIn"
                         id="generate"
                     >
                         Generate
@@ -148,7 +138,7 @@
                 </div>
                 <button
                     type="button"
-                    class="btn btn-primary animate__animated animate__fadeIn"
+                    class="material-button btn-dark animate__animated animate__fadeIn"
                     id="download"
                 >
                     Download
@@ -156,7 +146,7 @@
                 <div class="footer">
                     <p class="animate__animated animate__fadeInUp">
                         Made By
-                        <a href="https://www.github.com/oneill19/">Oneill19</a>
+                        <a href="https://github.com/oneofremii">Remii</a>
                     </p>
                 </div>
             </div>
