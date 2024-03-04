@@ -1,6 +1,4 @@
 html, body {
-    margin: 0;
-    padding: 0;
     scrollbar-color: transparent;
 }
 
@@ -13,23 +11,14 @@ body {
     scrollbar-color: transparent;
 }
 
-video#background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
-}
 
 .glassmorphism {
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    height: 100vh;
+    height: 80%;
+    padding: 30px;
   }
   
   @supports (-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px)) {
@@ -60,7 +49,7 @@ h1 {
 }
 
 label {
-    margin-top: 10px;
+    margin-top: 16px;
     font-weight: bold;
     color: #ffffff;
 }
