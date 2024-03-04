@@ -75,7 +75,6 @@ label {
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 0.40rem;
-    margin-top: 20px;
     margin-bottom: 20px;
     background-color: #6bb1e7;
     color: #fff;
@@ -122,24 +121,14 @@ label {
     }
 }
 
-.image-preview {
-    position: relative;
-    margin-top: 20px;
+#img {
     height: 320px;
     width: 640px;
-    overflow: hidden;
-}
-
-#img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-#download {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    font-family: 'Fira Code', monospace;
 }
 
 .img-card {
