@@ -7,7 +7,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'JetBrains Mono', monospace;
-    padding: 40px;
+    padding: 20px;
     scrollbar-color: transparent;
 }
 
@@ -67,6 +67,7 @@ label {
 }
 
 .btn {
+    margin: 20px 0;
     transition: 200ms;
 }
 
