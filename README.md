@@ -21,4 +21,4 @@ The program used several frameworks and libraries.
 
 ### Example
 
-![social-preview](https://user-images.githubusercontent.com/66797449/174906508-49bb5c84-b25a-4544-908b-14641853b12b.gif)
+![social-preview](/image/screenshot.png)
