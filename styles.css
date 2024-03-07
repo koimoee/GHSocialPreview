@@ -76,9 +76,9 @@ label {
 .material-button {
     display: inline-block;
     padding: 0.5rem 1rem;
-    border-radius: 0.40rem;
+    border-radius: 60px;
     margin-bottom: 20px;
-    background-color: #6bb1e7;
+    background-color: #5993c0;
     color: #fff;
     font-size: 1rem;
     font-weight: 500;
@@ -94,7 +94,7 @@ label {
   }
   
   .material-button:active {
-    background-color: #6bb1e7;
+    background-color: #5993c0;
   }
 
 .btn:hover {
