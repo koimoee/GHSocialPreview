@@ -3,7 +3,7 @@ html, body {
 }
 
 body {
-    background-image: url('/image/bg.jpg');
+    background-image: url('/image/bgnew.png');
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'JetBrains Mono', monospace;
@@ -67,6 +67,57 @@ label {
     align-items: center;
     color: #ffffff;
 }
+
+
+/* Add this CSS for checkbox styling */
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .form-check-input {
+    margin-right: 8px;
+    align-self: center;
+  }
+  
+  .form-check-label {
+    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+  }
+  
+  .form-check-input:checked {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: #fff;
+  }
+
+  .form-check-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3498db;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    cursor: pointer;
+  }
+  
+  .form-check-input:checked::before {
+    content: '\2713';
+    display: block;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  
 
 .btn {
     margin: 20px 0;

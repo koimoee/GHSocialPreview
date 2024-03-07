@@ -14,6 +14,13 @@ $(document).ready(() => {
 
   // action on download
   $("#download").click(() => downloadImage());
+
+      // Add this code to handle the checkbox state change
+  $("#show-stars").change(function () {
+    const isChecked = $(this).prop("checked");
+    toggleStarsVisibility(isChecked);
+  });
+  
 });
 
 /**
@@ -327,6 +334,7 @@ function createCardFooter(username, userImage) {
  * @param {string} tagClass the element class
  * @returns element with class
  * @example input: 'div', 'img'; output: <div class="img"></div>
+ * @param {boolean} showStars True if stars should be visible, false otherwise
  */
 function createElementWithClass(tag, tagClass) {
   // create the element
@@ -350,4 +358,16 @@ function downloadImage() {
   domtoimage.toBlob(elem).then((blob) => {
     window.saveAs(blob, `${usernameForSave}.${reponameForSave}.png`);
   });
+}
+
+function toggleStarsVisibility(showStars) {
+  // Find the stars element within the generated image
+  const starsElement = $(".stars");
+
+  // Toggle visibility based on the checkbox value
+  if (showStars) {
+      starsElement.show();
+  } else {
+      starsElement.hide();
+  }
 }
