@@ -1,0 +1,43 @@
+Ouka Discord Music Bot - Changelog
+
+Version 1.2.0 - 2024-08-31
+---------------------------
+- **New Features**
+  - Added support for Spotify playlists and tracks.
+  - Introduced a new queue management system with commands to rearrange, skip, and remove tracks.
+  - Implemented volume control with a new `/volume` command.
+  - Added auto-reconnect feature to ensure Ouka rejoins the voice channel if disconnected.
+
+- **Improvements**
+  - Improved audio streaming performance, reducing latency and buffering.
+  - Enhanced compatibility with Discord's new voice channel features.
+  - Updated the help command to include detailed descriptions and usage examples.
+  - Optimized the command handling system for faster response times.
+
+- **Bug Fixes**
+  - Fixed an issue where Ouka would stop playing music after a long period of inactivity.
+  - Resolved a bug where certain YouTube links would not play correctly.
+  - Corrected an error in the loop functionality that caused it to break after a few cycles.
+  - Patched a crash that occurred when trying to play a deleted or unavailable track.
+
+Version 1.1.0 - 2024-08-24
+---------------------------
+- **New Features**
+  - Added looping functionality with `/loop` command to repeat a single track or entire queue.
+  - Introduced shuffle command to randomize the queue order.
+
+- **Improvements**
+  - Improved error handling and user feedback for invalid commands.
+  - Enhanced support for high-quality audio streaming.
+  - Updated the dependency packages to their latest versions.
+
+- **Bug Fixes**
+  - Fixed an issue where the bot would not leave the voice channel after the queue ended.
+  - Resolved a bug with the play command not recognizing some URLs.
+
+Version 1.0.0 - 2024-08-10
+---------------------------
+- **Initial Release**
+  - Basic music playback functionality with commands to play, pause, skip, and stop tracks.
+  - Support for YouTube links and basic queue management.
+  - Implemented basic help and info commands.
