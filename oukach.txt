@@ -1,4 +1,4 @@
-Ouka Discord Music Bot - Changelog
+### Ouka Changelog
 
 Version 2.5.2 - 2024-09-1
 ---------------------------
