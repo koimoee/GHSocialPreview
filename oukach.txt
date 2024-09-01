@@ -1,6 +1,23 @@
 Ouka Discord Music Bot - Changelog
 
-Version 1.2.0 - 2024-08-31
+Version 2.5.2 - 2024-09-1
+---------------------------
+- **New Features**
+  - Added support for Youtube playlists.
+  - Added Album Name For Current Player
+
+- **Improvements**
+  - Improved audio streaming performance, reducing latency and buffering.
+  - Optimized the command handling system for faster response times.
+  - Removed .setImage From Current Player
+  - Use & Update To Use Ouka Custom Emoji Player
+  - Revamp About UI Section
+  - Revamp Help Center UI
+
+- **Bug Fixes**
+  - Fixed an issue where Ouka Interaction Failed When Pressing Loop Button.
+
+Version 2.5.1 - 2024-08-31
 ---------------------------
 - **New Features**
   - Added support for Spotify playlists and tracks.
@@ -20,7 +37,7 @@ Version 1.2.0 - 2024-08-31
   - Corrected an error in the loop functionality that caused it to break after a few cycles.
   - Patched a crash that occurred when trying to play a deleted or unavailable track.
 
-Version 1.1.0 - 2024-08-24
+Version 2.5.0 - 2024-08-24
 ---------------------------
 - **New Features**
   - Added looping functionality with `/loop` command to repeat a single track or entire queue.
