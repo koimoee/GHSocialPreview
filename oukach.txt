@@ -10,7 +10,7 @@ Version 2.5.2 - 2024-09-1
   - Improved audio streaming performance, reducing latency and buffering.
   - Optimized the command handling system for faster response times.
   - Removed .setImage From Current Player
-  - Use & Update To Use Ouka Custom Emoji Player
+  - Use & Update To Use Ouka Custom Emoji in Player Control UI
   - Revamp About UI Section
   - Revamp Help Center UI
 
