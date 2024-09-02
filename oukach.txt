@@ -16,6 +16,8 @@ Version 2.5.2 - 2024-09-1
 
 - **Bug Fixes**
   - Fixed an issue where Ouka Interaction Failed When Pressing Loop Button.
+  - Fixed ReferenceError: Cannot access 'album' before initialization when playing Spotify Playlist
+  - Fixed TypeError: player.destroy is not a function when try to use Leave Commands
 
 Version 2.5.1 - 2024-08-31
 ---------------------------
