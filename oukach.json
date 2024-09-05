@@ -1,0 +1,67 @@
+[
+    {
+        "version": "2.5.3",
+        "date": "2024-09-06",
+        "features": [
+            "Update & use PostgreSQL For Faster Response Instead of Mongoose",
+            "New Dialect To PostgreSQL",
+            "Update Multiple Node To Make Sound Better!"
+        ],
+        "improvements": [
+            "Improved audio streaming performance again, reducing latency and buffering.",
+            "Reorganize About UI layout Section and Adding Some Nodes, Process & Permissions Information.",
+            "Reorganize Changelog UI By using pagination",
+            "Now More Faster By Removing unused code!"
+        ],
+        "fixes": [
+            "Fixed an issue Warning: Model attributes (Id) passed into finder method options of model Guild.",
+            "Fixed TypeError: Cannot read properties of undefined (reading 'nodes')",
+            "Fixed TypeError: Cannot read properties of undefined (reading 'define')",
+            "Fixed Error: Failed to fetch data. Status code: 429"
+        ]
+    },
+    {
+        "version": "2.5.2",
+        "date": "2024-09-01",
+        "features": [
+            "Added support for Youtube playlists.",
+            "Added Album Name For Current Player"
+        ],
+        "improvements": [
+            "Improved audio streaming performance, reducing latency and buffering.",
+            "Optimized the command handling system for faster response times.",
+            "Removed .setImage From Current Player",
+            "Use & Update To Use Ouka Custom Emoji in Player Control UI",
+            "Revamp About UI Section",
+            "Revamp Help Center UI"
+        ],
+        "fixes": [
+            "Fixed an issue where Ouka Interaction Failed When Pressing Loop Button.",
+            "Fixed ReferenceError: Cannot access 'album' before initialization when playing Spotify Playlist",
+            "Fixed TypeError: player.destroy is not a function when try to use Leave Commands"
+        ]
+    },
+    {
+        "version": "2.5.1",
+        "date": "2024-08-31",
+        "features": [
+            "Added support for Spotify playlists and tracks.",
+            "Introduced a new queue management system with commands to rearrange, skip, and remove tracks.",
+            "Implemented volume control with a new `/volume` command.",
+            "Added auto-reconnect feature to ensure Ouka rejoins the voice channel if disconnected."
+        ],
+        "improvements": [
+            "Improved audio streaming performance, reducing latency and buffering.",
+            "Enhanced compatibility with Discord's new voice channel features.",
+            "Updated the help command to include detailed descriptions and usage examples.",
+            "Optimized the command handling system for faster response times."
+        ],
+        "fixes": [
+            "Fixed an issue where Ouka would stop playing music after a long period of inactivity.",
+            "Resolved a bug where certain YouTube links would not play correctly.",
+            "Corrected an error in the loop functionality that caused it to break after a few cycles.",
+            "Patched a crash that occurred when trying to play a deleted or unavailable track."
+        ]
+    }
+    // Add more changelog entries here
+]
