@@ -1,6 +1,25 @@
 ### Ouka Changelog
 
-Version 2.5.2 - 2024-09-1
+Version 2.5.3 - 2024-09-06
+---------------------------
+- **New Feature**
+  - Update & use PostgreSQL For Faster Response Instead of Mongoose
+  - New Dialect To PostgreSQL
+  - Update Multiple Node To Make Sound Better!
+
+- **Improvements**
+  - Improved audio streaming performance again, reducing latency and buffering.
+  - Reorganize About UI layout Section and Adding Some Nodes, Process & Permissions Information.
+  - Reorganize Changelog UI By using pagination
+  - Now More Faster By Removing unused code!
+
+- **Bug Fixes**
+  - Fixed an issue Warning: Model attributes (Id) passed into finder method options of model Guild.
+  - Fixed TypeError: Cannot read properties of undefined (reading 'nodes')
+  - Fixed TypeError: Cannot read properties of undefined (reading 'define')
+  - Fixed Error: Failed to fetch data. Status code: 429
+
+Version 2.5.2 - 2024-09-01
 ---------------------------
 - **New Features**
   - Added support for Youtube playlists.
