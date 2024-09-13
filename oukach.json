@@ -1,5 +1,26 @@
 [
     {
+        "version": "2.5.4",
+        "date": "2024-09-13",
+        "features": [
+            "Now Users can read developers message from notice commands!",
+            "Update Multiple Node To Make Sound Better!",
+            "Now Ouka can run smoothly!"
+        ],
+        "improvements": [
+            "Improved audio streaming performance.",
+            "Add More and More Error Handler!",
+            "Revamp About UI Layout.",
+            "Now More Faster By Removing unused code!"
+        ],
+        "fixes": [
+            "Fixed an issue Model attributes (Id) passed into finder method options of model User.",
+            "Fixed ReferenceError: user is not defined",
+            "Fixed User Database Model By Including Id of Interaction Author",
+            "Fixed Error: Failed to fetch data, bad response"
+        ]
+    },
+    {
         "version": "2.5.3",
         "date": "2024-09-06",
         "features": [
