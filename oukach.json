@@ -1,5 +1,24 @@
 [
     {
+        "version": "2.5.4-fix",
+        "date": "2024-09-25",
+        "features": [
+            "Now Playing Embed Now uses music album card!",
+            "Displaying Ouka Status Into Presence",
+        ],
+        "improvements": [
+            "Improved audio streaming performance.",
+            "Update Ouka Permission Scope",
+            "Improved Database Poll",
+        ],
+        "fixes": [
+            "Fixed an issue Uknown Interaction.",
+            "Fixed an Issue This interaction is already sent or deffered when run some commands",
+            "Fixed Some Song is undetectable",
+            "Fixed another known issue"
+        ]
+    },
+    {
         "version": "2.5.4",
         "date": "2024-09-13",
         "features": [
