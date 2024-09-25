@@ -4,12 +4,12 @@
         "date": "2024-09-25",
         "features": [
             "Now Playing Embed Now uses music album card!",
-            "Displaying Ouka Status Into Presence",
+            "Displaying Ouka Status Into Presence"
         ],
         "improvements": [
             "Improved audio streaming performance.",
             "Update Ouka Permission Scope",
-            "Improved Database Poll",
+            "Improved Database Poll"
         ],
         "fixes": [
             "Fixed an issue Uknown Interaction.",
