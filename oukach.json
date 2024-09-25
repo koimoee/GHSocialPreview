@@ -4,12 +4,17 @@
         "date": "2024-09-25",
         "features": [
             "Now Playing Embed Now uses music album card!",
-            "Displaying Ouka Status Into Presence"
+            "Now Displaying an Usercard In `/profile`",
+            "Displaying Ouka Status Into Presence",
+            "New Slash Commands: `/stats` | for view more advanced ouka stats!"
         ],
         "improvements": [
             "Improved audio streaming performance.",
             "Update Ouka Permission Scope",
-            "Improved Database Poll"
+            "Improved Database Poll",
+            "Totally Reorganized & Remake Layout of `/about`",
+            "Include Displaying Database Connection Status & Connector Dialect",
+            "Improved Another Code"
         ],
         "fixes": [
             "Fixed an issue Uknown Interaction.",
