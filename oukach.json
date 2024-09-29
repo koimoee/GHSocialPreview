@@ -1,10 +1,36 @@
 [
     {
+        "version": "2.5.5",
+        "date": "2024-09-30",
+        "features": [
+            "Implemented pagination for displaying premium users in the `premiumlist` command.",
+            "Added dynamic user card display in `/profile` command.",
+            "Improved Now Playing Embed with music album card.",
+            "Enhanced user experience by adding status display in presence.",
+            "Added guild and user creation logic for interactions and messages to ensure data consistency.",
+            "Fetched Discord username from the `bannedBy` field and displayed it in the embed footer for banned users."
+        ],
+        "improvements": [
+            "Improved overall bot performance and responsiveness.",
+            "Optimized pagination handling for premium user list.",
+            "Enhanced error handling in commands.",
+            "Refactored guild and user creation logic into utility functions for better code maintainability.",
+            "Improved logging for fetching user details to handle errors gracefully."
+        ],
+        "fixes": [
+            "Fixed known issues with interaction responses.",
+            "Resolved an issue where certain commands were causing errors.",
+            "Corrected bugs related to premium user data retrieval.",
+            "Fixed issues with finding or creating guilds and users during interactions and messages.",
+            "Handled cases where fetching the banned user's moderator details failed."
+        ]
+    },
+    {
         "version": "2.5.4fix",
         "date": "2024-09-25",
         "features": [
             "Now Playing Embed Now uses music album card!",
-            "Now Displaying an Usercard In `/profile`",
+            "Now Displaying a Usercard In `/profile`",
             "Displaying Ouka Status Into Presence",
             "New Slash Commands: `/stats` | for view more advanced ouka stats!"
         ],
