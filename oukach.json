@@ -8,6 +8,9 @@
         "Removed thumbnail display in `/lyrics` command embed for a cleaner output."
        ],
     "improvements": [
+        "Update ouka standalone audio",
+        "Updated new lyrics source Endpoint!",
+        "Allow Search Lyrics Without Player And Artist Name",
         "Improved error handling in `/lyrics` command to avoid crashes when `currentTrack` data is undefined or missing.",
         "Enhanced cooldown and permission handling in message handler to provide better feedback on missing permissions and cooldown restrictions.",
         "Optimized bot maintenance checks to simplify handling of restricted commands during maintenance mode.",
