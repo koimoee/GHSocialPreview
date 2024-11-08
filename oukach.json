@@ -1,5 +1,26 @@
 [
     {
+    "version": "2.5.6",
+    "date": "2024-11-08",
+    "features": [
+        "Updated `/lyrics` command to support fetching lyrics with only a song title, allowing searches without an artist name.",
+        "Added fallback to display 'Unknown Artist' if artist information is unavailable.",
+        "Removed thumbnail display in `/lyrics` command embed for a cleaner output."
+       ],
+    "improvements": [
+        "Improved error handling in `/lyrics` command to avoid crashes when `currentTrack` data is undefined or missing.",
+        "Enhanced cooldown and permission handling in message handler to provide better feedback on missing permissions and cooldown restrictions.",
+        "Optimized bot maintenance checks to simplify handling of restricted commands during maintenance mode.",
+        "Ensured proper initialization of cooldowns to prevent crashes when accessing uninitialized cooldown maps.",
+        "Added logging for node reconnect attempts, with a clear message 'Auto Reconnecting After 5 Seconds...' to notify users before reconnecting."
+       ],
+    "fixes": [
+        "Fix Other Known Issue",
+        "Fixed a critical error causing crashes in the `/lyrics` command when accessing `currentTrack` properties if `player` was undefined.",
+        "Resolved minor issue where owner-only commands did not bypass the prefix check, ensuring consistent behavior for owners."
+       ]
+    },
+    {
         "version": "2.5.5",
         "date": "2024-09-30",
         "features": [
