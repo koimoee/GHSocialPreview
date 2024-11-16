@@ -1,5 +1,30 @@
 [
     {
+    "version": "2.5.7",
+    "date": "2024-11-17",
+    "features": [
+        "Added support for notifying users via DM when receiving Premium rewards with a structured, visually appealing embed.",
+        "Implemented new 'UwU'-styled responses for messages to enhance the bot's thematic personality.",
+        "Enabled the bot to provide clearer messages when commands are attempted in DMs by replying with a cute embed explaining server-only restrictions.",
+        "Integrated Top.gg webhook functionality to reward users who vote for the bot with Premium, enhancing the engagement process with voters."
+    ],
+    "improvements": [
+        "Enhanced user notification embeds with playful and engaging language to match the bot's character.",
+        "Improved error handling and logging for DM notifications, ensuring graceful handling of unreachable users or failed message attempts.",
+        "Optimized command execution flow to prevent unnecessary processing of interactions received outside of servers.",
+        "Refined permission checks and error messages to deliver feedback in a more user-friendly format.",
+        "Added conditional webhook handling for Top.gg votes to ensure users are properly rewarded for voting with clear communication.",
+        "Uses playerControl Based From Users Instead Server In DB",
+        "Added a Custom Emoji & Music Card To Embed Player For Better UI",
+        "Change duration to album in music card"
+    ],
+    "fixes": [
+        "Resolved/Add Handlers Slash commands must run in server instead dms",
+        "Resolved an issue where the bot would not exit early when commands were executed in DMs, causing unnecessary processing.",
+        "Fixed a bug causing inconsistencies in reward expiry date formatting in Premium reward messages."
+    ]
+  },
+    {
     "version": "2.5.6",
     "date": "2024-11-08",
     "features": [
