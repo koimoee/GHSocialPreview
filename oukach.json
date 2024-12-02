@@ -3,20 +3,28 @@
         "version": "2.5.8",
         "date": "2024-12-02",
         "features": [
-            "Added a Played Tracks Count & Commands Used Count in each of users.",
-            "Added a '/source' command to change their preferred player source.",
-            "Added a new '/deleteaccount' command allowing users to delete their account if it was created more than 3 months ago, with a multi-step confirmation process.",
-            "Added a new '/updates' command to allow users to receive updates about Ouka."
+             "Introduced a comprehensive tracking system with a 'Played Tracks Count' and 'Commands Used Count' to provide users with insights into their engagement with the bot.",
+             "Implemented the '/source' command, enabling users to customize their music source preferences, enhancing control over the listening experience.",
+             "Added the '/deleteaccount' command, allowing users to permanently delete their account after it has been active for a minimum of three months. This process includes a multi-step confirmation procedure to ensure account deletion is intentional.",
+             "Launched the '/updates' command, providing users with real-time notifications and changelogs about the latest updates and improvements made to Ouka.",
+             "Developed the '/playlist' command, enabling users to view and manage their personalized playlists. Integrated with an intuitive add/remove button system directly within the player controls for a more seamless user experience."
         ],
         "improvements": [
-            "Improved Dev commands format.",
-            "Notice page now updated."
+             "Refined the format of Developer commands, optimizing them for greater clarity, flexibility, and ease of use in development workflows.",
+             "Revamped the 'Notice' page to include more relevant information, enhancing the user interface and user experience with more detailed and organized content.",
+             "Enhanced the bot’s overall response time by optimizing the internal data processing pipeline, leading to faster command execution and an overall smoother interaction experience.",
+             "Updated the internal error-handling mechanisms to provide more informative and user-friendly error messages, allowing for quicker troubleshooting and user support.",
+             "Improved user interaction with the bot by implementing dynamic feedback for all major commands, ensuring that responses are not only faster but also more contextually relevant to the user’s inputs."
         ],
         "fixes": [
-            "Resolved an issue where Spotify audio couldn't play from URL.",
-            "Resolved an issue with invalid database models in most slash commands.",
-            "Fixed another known issue."
-        ]
+            "Resolved an issue that prevented Spotify audio from playing when accessed via URL, restoring full functionality for Spotify-based media playback.",
+            "Addressed and fixed several instances of invalid database models affecting multiple slash commands, ensuring more reliable and consistent command execution.",
+            "Corrected a previously identified issue that caused unexpected behavior in specific functions, improving overall system stability.",
+            "Fixed a critical bug that caused some commands to intermittently fail due to an outdated authentication token handling process, ensuring smoother and more secure interactions.",
+            "Resolved a visual glitch on the music player interface that caused buttons to appear misaligned under specific screen resolutions, enhancing the user interface’s responsiveness across devices.",
+            "Eliminated minor memory leaks that were affecting long-running sessions, improving the overall performance and stability of the bot during extended usage periods.",
+            "Addressed compatibility issues with newer versions of Discord's API, ensuring full functionality with the latest platform updates and maintaining seamless integration."
+       ]
     },
     {
     "version": "2.5.7",
