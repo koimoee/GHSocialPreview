@@ -1,23 +1,23 @@
 [
     {
-    "version": "2.5.8",
-    "date": "2024-12-02",
-    "features": [
-        "Added a Played Tracks Count & Commands Used Count in each of users.",
-        "Added a '/source' command to changes their preferred player source.",
-        "Added a new '/deleteaccount' command allowing users to delete their account if it was created more than 3 months ago, with a multi-step confirmation process.",
-        "Added a new '/updates' command to allowing users to recieve about ouka updates."
-    ],
-    "improvements": [
-        "Improved Dev commands format.",
-        "Notice page now updated."
-    ],
-    "fixes": [
-        "Resolved an issue we're cant playing spotify audio from url.",
-        "Resolved an issue invalid database models in most of slash commands.",
-        "Fixed another known issue."
-    ],
-   },
+        "version": "2.5.8",
+        "date": "2024-12-02",
+        "features": [
+            "Added a Played Tracks Count & Commands Used Count in each of users.",
+            "Added a '/source' command to change their preferred player source.",
+            "Added a new '/deleteaccount' command allowing users to delete their account if it was created more than 3 months ago, with a multi-step confirmation process.",
+            "Added a new '/updates' command to allow users to receive updates about Ouka."
+        ],
+        "improvements": [
+            "Improved Dev commands format.",
+            "Notice page now updated."
+        ],
+        "fixes": [
+            "Resolved an issue where Spotify audio couldn't play from URL.",
+            "Resolved an issue with invalid database models in most slash commands.",
+            "Fixed another known issue."
+        ]
+    },
     {
     "version": "2.5.7",
     "date": "2024-11-17",
