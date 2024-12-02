@@ -1,213 +1,213 @@
 [
-    {
-        "version": "2.5.8",
-        "date": "2024-12-02",
-        "features": [
-             "Introduced a comprehensive tracking system with a 'Played Tracks Count' and 'Commands Used Count' to provide users with insights into their engagement with the bot.",
-             "Implemented the '/source' command, enabling users to customize their music source preferences, enhancing control over the listening experience.",
-             "Added the '/deleteaccount' command, allowing users to permanently delete their account after it has been active for a minimum of three months. This process includes a multi-step confirmation procedure to ensure account deletion is intentional.",
-             "Launched the '/updates' command, providing users with real-time notifications and changelogs about the latest updates and improvements made to Ouka.",
-             "Developed the '/playlist' command, enabling users to view and manage their personalized playlists. Integrated with an intuitive add/remove button system directly within the player controls for a more seamless user experience."
-        ],
-        "improvements": [
-             "Refined the format of Developer commands, optimizing them for greater clarity, flexibility, and ease of use in development workflows.",
-             "Revamped the 'Notice' page to include more relevant information, enhancing the user interface and user experience with more detailed and organized content.",
-             "Enhanced the bot’s overall response time by optimizing the internal data processing pipeline, leading to faster command execution and an overall smoother interaction experience.",
-             "Updated the internal error-handling mechanisms to provide more informative and user-friendly error messages, allowing for quicker troubleshooting and user support.",
-             "Improved user interaction with the bot by implementing dynamic feedback for all major commands, ensuring that responses are not only faster but also more contextually relevant to the user’s inputs."
-        ],
-        "fixes": [
-            "Resolved an issue that prevented Spotify audio from playing when accessed via URL, restoring full functionality for Spotify-based media playback.",
-            "Addressed and fixed several instances of invalid database models affecting multiple slash commands, ensuring more reliable and consistent command execution.",
-            "Corrected a previously identified issue that caused unexpected behavior in specific functions, improving overall system stability.",
-            "Fixed a critical bug that caused some commands to intermittently fail due to an outdated authentication token handling process, ensuring smoother and more secure interactions.",
-            "Resolved a visual glitch on the music player interface that caused buttons to appear misaligned under specific screen resolutions, enhancing the user interface’s responsiveness across devices.",
-            "Eliminated minor memory leaks that were affecting long-running sessions, improving the overall performance and stability of the bot during extended usage periods.",
-            "Addressed compatibility issues with newer versions of Discord's API, ensuring full functionality with the latest platform updates and maintaining seamless integration."
-       ]
-    },
-    {
-    "version": "2.5.7",
-    "date": "2024-11-17",
-    "features": [
-        "Added support for notifying users via DM when receiving Premium rewards with a structured, visually appealing embed.",
-        "Implemented new 'UwU'-styled responses for messages to enhance the bot's thematic personality.",
-        "Enabled the bot to provide clearer messages when commands are attempted in DMs by replying with a cute embed explaining server-only restrictions.",
-        "Integrated Top.gg webhook functionality to reward users who vote for the bot with Premium, enhancing the engagement process with voters."
-    ],
-    "improvements": [
-        "Enhanced user notification embeds with playful and engaging language to match the bot's character.",
-        "Improved error handling and logging for DM notifications, ensuring graceful handling of unreachable users or failed message attempts.",
-        "Optimized command execution flow to prevent unnecessary processing of interactions received outside of servers.",
-        "Refined permission checks and error messages to deliver feedback in a more user-friendly format.",
-        "Added conditional webhook handling for Top.gg votes to ensure users are properly rewarded for voting with clear communication.",
-        "Uses playerControl Based From Users Instead Server In DB",
-        "Added a Custom Emoji & Music Card To Embed Player For Better UI",
-        "Change duration to album in music card"
-    ],
-    "fixes": [
-        "Resolved/Add Handlers Slash commands must run in server instead dms",
-        "Resolved an issue where the bot would not exit early when commands were executed in DMs, causing unnecessary processing.",
-        "Fixed a bug causing inconsistencies in reward expiry date formatting in Premium reward messages."
-    ]
-  },
-    {
-    "version": "2.5.6",
-    "date": "2024-11-08",
-    "features": [
-        "Updated `/lyrics` command to support fetching lyrics with only a song title, allowing searches without an artist name.",
-        "Added fallback to display 'Unknown Artist' if artist information is unavailable.",
-        "Removed thumbnail display in `/lyrics` command embed for a cleaner output."
-       ],
-    "improvements": [
-        "Update ouka standalone audio",
-        "Updated new lyrics source Endpoint!",
-        "Allow Search Lyrics Without Player And Artist Name",
-        "Improved error handling in `/lyrics` command to avoid crashes when `currentTrack` data is undefined or missing.",
-        "Enhanced cooldown and permission handling in message handler to provide better feedback on missing permissions and cooldown restrictions.",
-        "Optimized bot maintenance checks to simplify handling of restricted commands during maintenance mode.",
-        "Ensured proper initialization of cooldowns to prevent crashes when accessing uninitialized cooldown maps.",
-        "Added logging for node reconnect attempts, with a clear message 'Auto Reconnecting After 5 Seconds...' to notify users before reconnecting."
-       ],
-    "fixes": [
-        "Fix Other Known Issue",
-        "Fixed a critical error causing crashes in the `/lyrics` command when accessing `currentTrack` properties if `player` was undefined.",
-        "Resolved minor issue where owner-only commands did not bypass the prefix check, ensuring consistent behavior for owners."
-       ]
-    },
-    {
-        "version": "2.5.5",
-        "date": "2024-09-30",
-        "features": [
-            "Implemented pagination for displaying premium users in the `premiumlist` command.",
-            "Added dynamic user card display in `/profile` command.",
-            "Improved Now Playing Embed with music album card.",
-            "Enhanced user experience by adding status display in presence.",
-            "Added guild and user creation logic for interactions and messages to ensure data consistency.",
-            "Fetched Discord username from the `bannedBy` field and displayed it in the embed footer for banned users."
-        ],
-        "improvements": [
-            "Improved overall bot performance and responsiveness.",
-            "Optimized pagination handling for premium user list.",
-            "Enhanced error handling in commands.",
-            "Refactored guild and user creation logic into utility functions for better code maintainability.",
-            "Improved logging for fetching user details to handle errors gracefully."
-        ],
-        "fixes": [
-            "Fixed known issues with interaction responses.",
-            "Resolved an issue where certain commands were causing errors.",
-            "Corrected bugs related to premium user data retrieval.",
-            "Fixed issues with finding or creating guilds and users during interactions and messages.",
-            "Handled cases where fetching the banned user's moderator details failed."
-        ]
-    },
-    {
-        "version": "2.5.4fix",
-        "date": "2024-09-25",
-        "features": [
-            "Now Playing Embed Now uses music album card!",
-            "Now Displaying a Usercard In `/profile`",
-            "Displaying Ouka Status Into Presence",
-            "New Slash Commands: `/stats` | for view more advanced ouka stats!"
-        ],
-        "improvements": [
-            "Improved audio streaming performance.",
-            "Update Ouka Permission Scope",
-            "Improved Database Poll",
-            "Totally Reorganized & Remake Layout of `/about`",
-            "Include Displaying Database Connection Status & Connector Dialect",
-            "Improved Another Code"
-        ],
-        "fixes": [
-            "Fixed an issue Uknown Interaction.",
-            "Fixed an Issue This interaction is already sent or deffered when run some commands",
-            "Fixed Some Song is undetectable",
-            "Fixed another known issue"
-        ]
-    },
-    {
-        "version": "2.5.4",
-        "date": "2024-09-13",
-        "features": [
-            "Now Users can read developers message from notice commands!",
-            "Update Multiple Node To Make Sound Better!",
-            "Now Ouka can run smoothly!"
-        ],
-        "improvements": [
-            "Improved audio streaming performance.",
-            "Add More and More Error Handler!",
-            "Revamp About UI Layout.",
-            "Now More Faster By Removing unused code!"
-        ],
-        "fixes": [
-            "Fixed an issue Model attributes (Id) passed into finder method options of model User.",
-            "Fixed ReferenceError: user is not defined",
-            "Fixed User Database Model By Including Id of Interaction Author",
-            "Fixed Error: Failed to fetch data, bad response"
-        ]
-    },
-    {
-        "version": "2.5.3",
-        "date": "2024-09-06",
-        "features": [
-            "Update & use PostgreSQL For Faster Response Instead of Mongoose",
-            "New Dialect To PostgreSQL",
-            "Update Multiple Node To Make Sound Better!"
-        ],
-        "improvements": [
-            "Improved audio streaming performance again, reducing latency and buffering.",
-            "Reorganize About UI layout Section and Adding Some Nodes, Process & Permissions Information.",
-            "Reorganize Changelog UI By using pagination",
-            "Now More Faster By Removing unused code!"
-        ],
-        "fixes": [
-            "Fixed an issue Warning: Model attributes (Id) passed into finder method options of model Guild.",
-            "Fixed TypeError: Cannot read properties of undefined (reading 'nodes')",
-            "Fixed TypeError: Cannot read properties of undefined (reading 'define')",
-            "Fixed Error: Failed to fetch data. Status code: 429"
-        ]
-    },
-    {
-        "version": "2.5.2",
-        "date": "2024-09-01",
-        "features": [
-            "Added support for Youtube playlists.",
-            "Added Album Name For Current Player"
-        ],
-        "improvements": [
-            "Improved audio streaming performance, reducing latency and buffering.",
-            "Optimized the command handling system for faster response times.",
-            "Removed .setImage From Current Player",
-            "Use & Update To Use Ouka Custom Emoji in Player Control UI",
-            "Revamp About UI Section",
-            "Revamp Help Center UI"
-        ],
-        "fixes": [
-            "Fixed an issue where Ouka Interaction Failed When Pressing Loop Button.",
-            "Fixed ReferenceError: Cannot access 'album' before initialization when playing Spotify Playlist",
-            "Fixed TypeError: player.destroy is not a function when try to use Leave Commands"
-        ]
-    },
-    {
-        "version": "2.5.1",
-        "date": "2024-08-31",
-        "features": [
-            "Added support for Spotify playlists and tracks.",
-            "Introduced a new queue management system with commands to rearrange, skip, and remove tracks.",
-            "Implemented volume control with a new `/volume` command.",
-            "Added auto-reconnect feature to ensure Ouka rejoins the voice channel if disconnected."
-        ],
-        "improvements": [
-            "Improved audio streaming performance, reducing latency and buffering.",
-            "Enhanced compatibility with Discord's new voice channel features.",
-            "Updated the help command to include detailed descriptions and usage examples.",
-            "Optimized the command handling system for faster response times."
-        ],
-        "fixes": [
-            "Fixed an issue where Ouka would stop playing music after a long period of inactivity.",
-            "Resolved a bug where certain YouTube links would not play correctly.",
-            "Corrected an error in the loop functionality that caused it to break after a few cycles.",
-            "Patched a crash that occurred when trying to play a deleted or unavailable track."
-        ]
-    }
+   {
+      "version":"2.5.8",
+      "date":"2024-12-02",
+      "features":[
+         "Introduced a comprehensive tracking system with a 'Played Tracks Count' and 'Commands Used Count' to provide users with insights into their engagement with the bot.",
+         "Implemented the '/source' command, enabling users to customize their music source preferences, enhancing control over the listening experience.",
+         "Added the '/deleteaccount' command, allowing users to permanently delete their account after it has been active for a minimum of three months. This process includes a multi-step confirmation procedure to ensure account deletion is intentional.",
+         "Launched the '/updates' command, providing users with real-time notifications and changelogs about the latest updates and improvements made to Ouka.",
+         "Developed the '/playlist' command, enabling users to view and manage their personalized playlists. Integrated with an intuitive add/remove button system directly within the player controls for a more seamless user experience."
+      ],
+      "improvements":[
+         "Refined the format of Developer commands, optimizing them for greater clarity, flexibility, and ease of use in development workflows.",
+         "Revamped the 'Notice' page to include more relevant information, enhancing the user interface and user experience with more detailed and organized content.",
+         "Enhanced the bot’s overall response time by optimizing the internal data processing pipeline, leading to faster command execution and an overall smoother interaction experience.",
+         "Updated the internal error-handling mechanisms to provide more informative and user-friendly error messages, allowing for quicker troubleshooting and user support.",
+         "Improved user interaction with the bot by implementing dynamic feedback for all major commands, ensuring that responses are not only faster but also more contextually relevant to the user’s inputs."
+      ],
+      "fixes":[
+         "Resolved an issue that prevented Spotify audio from playing when accessed via URL, restoring full functionality for Spotify-based media playback.",
+         "Addressed and fixed several instances of invalid database models affecting multiple slash commands, ensuring more reliable and consistent command execution.",
+         "Corrected a previously identified issue that caused unexpected behavior in specific functions, improving overall system stability.",
+         "Fixed a critical bug that caused some commands to intermittently fail due to an outdated authentication token handling process, ensuring smoother and more secure interactions.",
+         "Resolved a visual glitch on the music player interface that caused buttons to appear misaligned under specific screen resolutions, enhancing the user interface’s responsiveness across devices.",
+         "Eliminated minor memory leaks that were affecting long-running sessions, improving the overall performance and stability of the bot during extended usage periods.",
+         "Addressed compatibility issues with newer versions of Discord's API, ensuring full functionality with the latest platform updates and maintaining seamless integration."
+      ]
+   },
+   {
+      "version":"2.5.7",
+      "date":"2024-11-17",
+      "features":[
+         "Added support for notifying users via DM when receiving Premium rewards with a structured, visually appealing embed.",
+         "Implemented new 'UwU'-styled responses for messages to enhance the bot's thematic personality.",
+         "Enabled the bot to provide clearer messages when commands are attempted in DMs by replying with a cute embed explaining server-only restrictions.",
+         "Integrated Top.gg webhook functionality to reward users who vote for the bot with Premium, enhancing the engagement process with voters."
+      ],
+      "improvements":[
+         "Enhanced user notification embeds with playful and engaging language to match the bot's character.",
+         "Improved error handling and logging for DM notifications, ensuring graceful handling of unreachable users or failed message attempts.",
+         "Optimized command execution flow to prevent unnecessary processing of interactions received outside of servers.",
+         "Refined permission checks and error messages to deliver feedback in a more user-friendly format.",
+         "Added conditional webhook handling for Top.gg votes to ensure users are properly rewarded for voting with clear communication.",
+         "Uses playerControl Based From Users Instead Server In DB",
+         "Added a Custom Emoji & Music Card To Embed Player For Better UI",
+         "Change duration to album in music card"
+      ],
+      "fixes":[
+         "Resolved/Add Handlers Slash commands must run in server instead dms",
+         "Resolved an issue where the bot would not exit early when commands were executed in DMs, causing unnecessary processing.",
+         "Fixed a bug causing inconsistencies in reward expiry date formatting in Premium reward messages."
+      ]
+   },
+   {
+      "version":"2.5.6",
+      "date":"2024-11-08",
+      "features":[
+         "Updated `/lyrics` command to support fetching lyrics with only a song title, allowing searches without an artist name.",
+         "Added fallback to display 'Unknown Artist' if artist information is unavailable.",
+         "Removed thumbnail display in `/lyrics` command embed for a cleaner output."
+      ],
+      "improvements":[
+         "Update ouka standalone audio",
+         "Updated new lyrics source Endpoint!",
+         "Allow Search Lyrics Without Player And Artist Name",
+         "Improved error handling in `/lyrics` command to avoid crashes when `currentTrack` data is undefined or missing.",
+         "Enhanced cooldown and permission handling in message handler to provide better feedback on missing permissions and cooldown restrictions.",
+         "Optimized bot maintenance checks to simplify handling of restricted commands during maintenance mode.",
+         "Ensured proper initialization of cooldowns to prevent crashes when accessing uninitialized cooldown maps.",
+         "Added logging for node reconnect attempts, with a clear message 'Auto Reconnecting After 5 Seconds...' to notify users before reconnecting."
+      ],
+      "fixes":[
+         "Fix Other Known Issue",
+         "Fixed a critical error causing crashes in the `/lyrics` command when accessing `currentTrack` properties if `player` was undefined.",
+         "Resolved minor issue where owner-only commands did not bypass the prefix check, ensuring consistent behavior for owners."
+      ]
+   },
+   {
+      "version":"2.5.5",
+      "date":"2024-09-30",
+      "features":[
+         "Implemented pagination for displaying premium users in the `premiumlist` command.",
+         "Added dynamic user card display in `/profile` command.",
+         "Improved Now Playing Embed with music album card.",
+         "Enhanced user experience by adding status display in presence.",
+         "Added guild and user creation logic for interactions and messages to ensure data consistency.",
+         "Fetched Discord username from the `bannedBy` field and displayed it in the embed footer for banned users."
+      ],
+      "improvements":[
+         "Improved overall bot performance and responsiveness.",
+         "Optimized pagination handling for premium user list.",
+         "Enhanced error handling in commands.",
+         "Refactored guild and user creation logic into utility functions for better code maintainability.",
+         "Improved logging for fetching user details to handle errors gracefully."
+      ],
+      "fixes":[
+         "Fixed known issues with interaction responses.",
+         "Resolved an issue where certain commands were causing errors.",
+         "Corrected bugs related to premium user data retrieval.",
+         "Fixed issues with finding or creating guilds and users during interactions and messages.",
+         "Handled cases where fetching the banned user's moderator details failed."
+      ]
+   },
+   {
+      "version":"2.5.4fix",
+      "date":"2024-09-25",
+      "features":[
+         "Now Playing Embed Now uses music album card!",
+         "Now Displaying a Usercard In `/profile`",
+         "Displaying Ouka Status Into Presence",
+         "New Slash Commands: `/stats` | for view more advanced ouka stats!"
+      ],
+      "improvements":[
+         "Improved audio streaming performance.",
+         "Update Ouka Permission Scope",
+         "Improved Database Poll",
+         "Totally Reorganized & Remake Layout of `/about`",
+         "Include Displaying Database Connection Status & Connector Dialect",
+         "Improved Another Code"
+      ],
+      "fixes":[
+         "Fixed an issue Uknown Interaction.",
+         "Fixed an Issue This interaction is already sent or deffered when run some commands",
+         "Fixed Some Song is undetectable",
+         "Fixed another known issue"
+      ]
+   },
+   {
+      "version":"2.5.4",
+      "date":"2024-09-13",
+      "features":[
+         "Now Users can read developers message from notice commands!",
+         "Update Multiple Node To Make Sound Better!",
+         "Now Ouka can run smoothly!"
+      ],
+      "improvements":[
+         "Improved audio streaming performance.",
+         "Add More and More Error Handler!",
+         "Revamp About UI Layout.",
+         "Now More Faster By Removing unused code!"
+      ],
+      "fixes":[
+         "Fixed an issue Model attributes (Id) passed into finder method options of model User.",
+         "Fixed ReferenceError: user is not defined",
+         "Fixed User Database Model By Including Id of Interaction Author",
+         "Fixed Error: Failed to fetch data, bad response"
+      ]
+   },
+   {
+      "version":"2.5.3",
+      "date":"2024-09-06",
+      "features":[
+         "Update & use PostgreSQL For Faster Response Instead of Mongoose",
+         "New Dialect To PostgreSQL",
+         "Update Multiple Node To Make Sound Better!"
+      ],
+      "improvements":[
+         "Improved audio streaming performance again, reducing latency and buffering.",
+         "Reorganize About UI layout Section and Adding Some Nodes, Process & Permissions Information.",
+         "Reorganize Changelog UI By using pagination",
+         "Now More Faster By Removing unused code!"
+      ],
+      "fixes":[
+         "Fixed an issue Warning: Model attributes (Id) passed into finder method options of model Guild.",
+         "Fixed TypeError: Cannot read properties of undefined (reading 'nodes')",
+         "Fixed TypeError: Cannot read properties of undefined (reading 'define')",
+         "Fixed Error: Failed to fetch data. Status code: 429"
+      ]
+   },
+   {
+      "version":"2.5.2",
+      "date":"2024-09-01",
+      "features":[
+         "Added support for Youtube playlists.",
+         "Added Album Name For Current Player"
+      ],
+      "improvements":[
+         "Improved audio streaming performance, reducing latency and buffering.",
+         "Optimized the command handling system for faster response times.",
+         "Removed .setImage From Current Player",
+         "Use & Update To Use Ouka Custom Emoji in Player Control UI",
+         "Revamp About UI Section",
+         "Revamp Help Center UI"
+      ],
+      "fixes":[
+         "Fixed an issue where Ouka Interaction Failed When Pressing Loop Button.",
+         "Fixed ReferenceError: Cannot access 'album' before initialization when playing Spotify Playlist",
+         "Fixed TypeError: player.destroy is not a function when try to use Leave Commands"
+      ]
+   },
+   {
+      "version":"2.5.1",
+      "date":"2024-08-31",
+      "features":[
+         "Added support for Spotify playlists and tracks.",
+         "Introduced a new queue management system with commands to rearrange, skip, and remove tracks.",
+         "Implemented volume control with a new `/volume` command.",
+         "Added auto-reconnect feature to ensure Ouka rejoins the voice channel if disconnected."
+      ],
+      "improvements":[
+         "Improved audio streaming performance, reducing latency and buffering.",
+         "Enhanced compatibility with Discord's new voice channel features.",
+         "Updated the help command to include detailed descriptions and usage examples.",
+         "Optimized the command handling system for faster response times."
+      ],
+      "fixes":[
+         "Fixed an issue where Ouka would stop playing music after a long period of inactivity.",
+         "Resolved a bug where certain YouTube links would not play correctly.",
+         "Corrected an error in the loop functionality that caused it to break after a few cycles.",
+         "Patched a crash that occurred when trying to play a deleted or unavailable track."
+      ]
+   }
 ]
