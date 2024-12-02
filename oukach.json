@@ -6,7 +6,7 @@
         "Added a Played Tracks Count & Commands Used Count in each of users.",
         "Added a '/source' command to changes their preferred player source.",
         "Added a new '/deleteaccount' command allowing users to delete their account if it was created more than 3 months ago, with a multi-step confirmation process.",
-        "Added a new `/updates` command to allowing users to recieve about ouka updates."
+        "Added a new '/updates' command to allowing users to recieve about ouka updates."
     ],
     "improvements": [
         "Improved Dev commands format.",
