@@ -3,6 +3,9 @@
       "version":"2.5.8",
       "date":"2024-12-02",
       "features":[
+         "Added a commands '/votetoskip' which allow another users to decide track should skipped nor not using vote way.",
+         "Added a DJ Configuration Commands To Allow Community Set which allow uses ouka.",
+         "Update Database Sync Models Logic",
          "Introduced a comprehensive tracking system with a 'Played Tracks Count' and 'Commands Used Count' to provide users with insights into their engagement with the bot.",
          "Implemented the '/source' command, enabling users to customize their music source preferences, enhancing control over the listening experience.",
          "Added the '/deleteaccount' command, allowing users to permanently delete their account after it has been active for a minimum of three months. This process includes a multi-step confirmation procedure to ensure account deletion is intentional.",
